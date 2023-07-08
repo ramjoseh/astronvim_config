@@ -81,5 +81,16 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+    -- neovide config
+    if vim.g.neovide then
+      vim.opt.linespace = 4
+      vim.g.neovide_scale_factor = 1.0
+      vim.g.neovide_padding_top = 0
+      vim.g.neovide_padding_bottom = 0
+      vim.g.neovide_padding_right = 0
+      vim.g.neovide_padding_left = 0
+      vim.o.guifont = "FiraMono_Nerd_Font:h12.5"
+    end
   end,
 }
