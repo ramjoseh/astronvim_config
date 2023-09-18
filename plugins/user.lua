@@ -14,7 +14,7 @@ return {
     event = "VeryLazy",
     config = function()
       require("chatgpt").setup {
-        api_key_cmd = "pass show chatgpt-key",
+        api_key_cmd = "pass show api/chatgpt-key",
       }
     end,
     dependencies = {
@@ -22,5 +22,15 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim",
     },
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
   },
 }
