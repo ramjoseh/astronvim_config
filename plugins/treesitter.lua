@@ -8,6 +8,10 @@ return {
       "vue",
       "typescript",
       "css",
+      "php",
+      "prisma",
+      "json",
+      "http",
     })
   end,
 }

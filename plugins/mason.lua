@@ -11,6 +11,7 @@ return {
         "volar",
         "pylsp",
         "tsserver",
+        "prismals",
       })
     end,
   },
